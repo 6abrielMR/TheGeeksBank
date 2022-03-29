@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/gabriel/Documents/projects/technicals_test/tr3sdetr3s/TheGeeksBankProject/TheGeeksBank.Api/TheGeeksBank.Api.csproj": {}
+  },
+  "projects": {
+    "/home/gabriel/Documents/projects/technicals_test/tr3sdetr3s/TheGeeksBankProject/TheGeeksBank.Api/TheGeeksBank.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/gabriel/Documents/projects/technicals_test/tr3sdetr3s/TheGeeksBankProject/TheGeeksBank.Api/TheGeeksBank.Api.csproj",
+        "projectName": "TheGeeksBank.Api",
+        "projectPath": "/home/gabriel/Documents/projects/technicals_test/tr3sdetr3s/TheGeeksBankProject/TheGeeksBank.Api/TheGeeksBank.Api.csproj",
+        "packagesPath": "/home/gabriel/.nuget/packages/",
+        "outputPath": "/home/gabriel/Documents/projects/technicals_test/tr3sdetr3s/TheGeeksBankProject/TheGeeksBank.Api/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/gabriel/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.417/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

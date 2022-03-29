@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace TheGeeksBank.Api.Migrations
 {
@@ -14,7 +15,8 @@ namespace TheGeeksBank.Api.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     FirstNumber = table.Column<long>(type: "bigint", nullable: false),
                     SecondNumber = table.Column<long>(type: "bigint", nullable: false),
-                    Result = table.Column<long>(type: "bigint", nullable: false)
+                    Result = table.Column<long>(type: "bigint", nullable: false),
+                    CreationAt = table.Column<byte[]>(rowVersion: true, nullable: true)
                 },
                 constraints: table =>
                 {

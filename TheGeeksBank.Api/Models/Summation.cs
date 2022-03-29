@@ -19,5 +19,8 @@ namespace TheGeeksBank.Api.Models
         [Required]
         [Column(TypeName = "bigint")]
         public ulong Result { get; set; }
+
+        [Timestamp]
+        public byte[] CreationAt { get; set; }
     }
 }

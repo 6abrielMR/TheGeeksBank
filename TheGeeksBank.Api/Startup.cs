@@ -25,6 +25,11 @@ namespace TheGeeksBank.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+                options.AddPolicy("AllowWebApi", builder =>
+                    builder.AllowAnyOrigin()
+                        .AllowAnyHeader()
+                        .AllowAnyMethod()));
             services.AddControllers();
         }
 
@@ -35,6 +40,8 @@ namespace TheGeeksBank.Api
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors("AllowWebApi");
 
             app.UseHttpsRedirection();
 

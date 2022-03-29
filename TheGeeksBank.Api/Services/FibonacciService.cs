@@ -9,6 +9,7 @@ namespace TheGeeksBank.Api.Services
         public FibonacciService()
         {
             _fibonacciSequence = new ulong[100];
+            SetupSequence();
         }
 
         private void SetupSequence()

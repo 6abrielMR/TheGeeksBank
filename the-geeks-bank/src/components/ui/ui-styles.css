@@ -1,0 +1,88 @@
+.btnc {
+  background-position: center;
+  border-radius: 100%;
+  color: var(--color-text-btn);
+  font-size: 2.5rem;
+  height: 180px;
+  transition: background 0.8s;
+  width: 180px;
+}
+
+.btnc:hover {
+  cursor: pointer;
+}
+
+.btnc:active {
+  background-size: 100%;
+  transition: background 0s;
+}
+
+/* Normal buttons */
+.normal {
+  background-color: var(--color-primary-btn);
+}
+.normal:hover {
+  background: var(--color-primary-accent-dark-btn)
+    radial-gradient(
+      circle,
+      transparent 1%,
+      var(--color-primary-accent-dark-btn) 1%
+    )
+    center/15000%;
+}
+.normal:active {
+  background-color: var(--color-primary-accent-btn);
+}
+
+/* Option buttons */
+.opc {
+  background-color: var(--color-secondary-btn);
+}
+.opc:hover {
+  background: var(--color-secondary-accent-dark-btn)
+    radial-gradient(
+      circle,
+      transparent 1%,
+      var(--color-secondary-accent-dark-btn) 1%
+    )
+    center/15000%;
+}
+.opc:active {
+  background-color: var(--color-secondary-accent-btn);
+}
+
+/* Responsive ui */
+@media (min-width: 370px) {
+  .btnc {
+    height: var(--btn-sm);
+    width: var(--btn-sm);
+  }
+}
+
+@media (min-width: 640px) {
+  .btnc {
+    height: var(--btn-md);
+    width: var(--btn-md);
+  }
+}
+
+@media (min-width: 768px) {
+  .btnc {
+    height: var(--btn-md);
+    width: var(--btn-md);
+  }
+}
+
+@media (min-width: 1024px) {
+  .btnc {
+    height: var(--btn-md);
+    width: var(--btn-md);
+  }
+}
+
+@media (min-width: 1200px) {
+  .btnc {
+    height: var(--btn-lg);
+    width: var(--btn-lg);
+  }
+}

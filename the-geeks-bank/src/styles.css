@@ -1,0 +1,19 @@
+:root {
+  --color-primary: #000000;
+
+  --color-primary-btn: #353235;
+  --color-primary-accent-btn: #918f92;
+  --color-primary-accent-dark-btn: #444346;
+  --color-secondary-btn: #ff9403;
+  --color-secondary-accent-btn: #ffc067;
+  --color-secondary-accent-dark-btn: #df8200;
+  --color-text-btn: #ecebec;
+
+  --btn-sm: 80px;
+  --btn-md: 120px;
+  --btn-lg: 180px;
+}
+
+body {
+  background-color: var(--color-primary);
+}

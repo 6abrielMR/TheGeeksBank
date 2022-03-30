@@ -1,0 +1,64 @@
+textarea {
+  background-color: var(--color-primary);
+  border: none;
+  color: var(--color-text-btn);
+  font-size: 3rem !important;
+  height: 60%;
+  padding: 5% 10% 0 10%;
+  resize: none !important;
+  text-align: right;
+  scrollbar-color: var(--color-primary) var(--color-primary);
+  scrollbar-width: thin;
+}
+
+textarea:hover {
+  cursor: default;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+span {
+  color: var(--color-text-btn);
+  margin-left: 10%;
+}
+
+.content-del {
+  height: 35%;
+}
+
+.content-del > p {
+  color: var(--color-text-btn);
+  font-size: 3rem;
+  margin-left: 10%;
+  margin-bottom: 0;
+}
+
+button {
+  background: none;
+  background-position: center;
+  border-radius: 100% !important;
+  color: var(--color-text-btn);
+  font-size: 3rem !important;
+  height: 80px;
+  margin-right: 9% !important;
+  border: none;
+  padding-right: 10px;
+  transition: background 0.8s;
+  width: 80px;
+}
+
+button:active {
+  background-size: 100%;
+  transition: background 0s;
+}
+
+button:hover {
+  background: var(--color-accent-dark-btn)
+    radial-gradient(circle, transparent 1%, var(--color-accent-dark-btn) 1%)
+    center/15000%;
+}
+button:active {
+  background-color: var(--color-accent-btn);
+}

@@ -1,6 +1,7 @@
 import React from "react";
+import "./result-screen-styles.css";
 
-export const ResultScreen = () => {
+export const ResultScreen = ({ numbers }) => {
   return (
     <>
       <textarea
@@ -8,7 +9,7 @@ export const ResultScreen = () => {
         className="select-disable w-100"
         name="numbers"
         autocomplete="off"
-        value="2+2"
+        value={numbers}
         readOnly
       />
       <span>

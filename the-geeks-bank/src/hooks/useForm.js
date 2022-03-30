@@ -1,7 +1,10 @@
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { makeSummation } from "../actions/summation";
 
 export const useForm = (initialState = {}) => {
   const [values, setValues] = useState(initialState);
+  const dispatch = useDispatch();
 
   const validateNumbers = (numbers) => {
     const FirstNumber = numbers.split("+")[0];
@@ -32,7 +35,12 @@ export const useForm = (initialState = {}) => {
         return;
       }
 
-      // TODO: Send data to server for validate into sequence of the fibonacci
+      dispatch(
+        makeSummation({
+          FirstNumber,
+          SecondNumber,
+        })
+      );
       return;
     }
 

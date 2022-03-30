@@ -55,10 +55,14 @@ button:active {
 }
 
 button:hover {
-  background: var(--color-accent-dark-btn)
-    radial-gradient(circle, transparent 1%, var(--color-accent-dark-btn) 1%)
+  background: var(--color-primary-accent-dark-btn)
+    radial-gradient(
+      circle,
+      transparent 1%,
+      var(--color-primary-accent-dark-btn) 1%
+    )
     center/15000%;
 }
 button:active {
-  background-color: var(--color-accent-btn);
+  background-color: var(--color-primary-accent-btn);
 }

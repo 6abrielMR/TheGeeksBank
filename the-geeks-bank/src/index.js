@@ -1,5 +1,9 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import { TheGeeksBankApp } from "./TheGeeksBankApp";
 
-ReactDOM.render(<TheGeeksBankApp />, document.getElementById("root"));
+const container = document.getElementById("root");
+
+const rootElement = ReactDOM.createRoot(container);
+
+rootElement.render(<TheGeeksBankApp />);

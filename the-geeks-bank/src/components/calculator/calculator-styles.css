@@ -1,0 +1,14 @@
+.result-screen {
+  height: var(--result-screen-height);
+  width: 100%;
+}
+
+.keyboard {
+  display: grid;
+  grid-row-gap: 3%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: calc(100vh - var(--result-screen-height));
+  place-items: center;
+  width: 100%;
+}
